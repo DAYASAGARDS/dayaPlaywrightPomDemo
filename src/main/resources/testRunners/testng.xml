@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Imedidata" thread-count="2" parallel="tests" verbose="4">
+    <listeners>
+        <listener class-name="com.playwright.listeners.ExtentReportListener" />
+    </listeners>
+
+    <test name="Regression">
+        <classes>
+            <class name="com.playwright.tests.HomePageTest"/>
+    <!--<class name="com.playwright.tests.LandingPageTest"/> -->
+        </classes>
+    </test> <!-- Test -->
+    <test name="Regression1">
+        <classes>
+            <class name="com.playwright.tests.LandingPageTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
